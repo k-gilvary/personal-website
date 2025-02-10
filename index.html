@@ -19,7 +19,7 @@
          </div>
 
         <!-- about text  -->
-         <div id="about-container" class="text-center px-2 w-90">
+         <div id="about-container" class="text-center px-2 custom-width">
             <p id="about-text">
                 <span id="about-intro">Hey, I'm Kenny!</span> I am a developer out of New Jersey, US. My passion for web development
                 started a long time ago, when I was about 10 or 11. My friend at the time told me about this
@@ -38,14 +38,15 @@
             </p>
          </div>
 
-        <!-- what i know -->
-        <div id="tabs-container" class="w-90 mb-4 d-flex flex-column">
+        <!-- languages, portfolio, contact taab list -->
+        <div id="tabs-container" class="custom-width mb-4 d-flex flex-column">
             <div class="tab">
                 <button class="tab-link active" onclick="openTab(event, 'languages')">Languages</button>
                 <button class="tab-link" onclick="openTab(event, 'portfolio')">Portfolio</button>
                 <button class="tab-link" onclick="openTab(event, 'contact')">Contact</button>
             </div>
 
+                <!-- languages -->
               <div id="languages" class="tab-content" style="display: block;">
                 <h3 class="tab-content-header">Languages</h3>
                 <ul id="language-list" class="tab-content-list">
@@ -58,6 +59,7 @@
                 </ul>
               </div>
 
+              <!-- portfolio -->
               <div id="portfolio" class="tab-content">
                 <h3 class="tab-content-header">Portfolio</h3>
                 <div id="portfolio-cards-container">
@@ -73,6 +75,7 @@
                 </div>
               </div>
 
+              <!-- contact -->
               <div id="contact" class="tab-content">
                 <h3 class="tab-content-header mb-2">Contact</h3>
                 <ul id="contact-list" class="tab-content-list">
