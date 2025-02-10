@@ -81,12 +81,17 @@ html, body {
     animation: fadeIn 1s;
 }
 
+.tab-content-header {
+    margin-bottom: 10px;
+}
+
 .contact-link {
     color: white;
 }
 
 .portfolio-card {
     text-decoration: none;
+    color: black;
 }
 
 #footer {
@@ -100,5 +105,27 @@ html, body {
     }
     20% {
         opacity: 1;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #profile-image {
+        width: 20%;
+    }
+
+    #about-text {
+        font-size: 14px;
+    }
+
+    .w-90 {
+        width: 75%;
+    }
+
+    .card {
+        width: 50%;
+    }
+
+    #footer {
+        font-size: 16px;
     }
 }

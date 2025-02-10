@@ -11,7 +11,7 @@
     <title>Kenny Gilvary</title>
 </head>
 <body>
-    <div id="main-content" class=" d-flex flex-column align-items-center">
+    <div id="main-content" class="d-none d-flex flex-column align-items-center">
         <!-- pic and name -->
          <div id="pic-n-name-container" class="w-100 d-flex flex-column align-items-center p-2 mt-3">
             <img src="./img/profile.jpg" class="mb-3" id="profile-image" alt="profile image">
@@ -39,14 +39,14 @@
          </div>
 
         <!-- what i know -->
-        <div id="tabs-container" class="w-90 mb-4">
+        <div id="tabs-container" class="w-90 mb-4 d-flex flex-column">
             <div class="tab">
-                <button class="tab-link" onclick="openTab(event, 'languages')">Languages</button>
+                <button class="tab-link active" onclick="openTab(event, 'languages')">Languages</button>
                 <button class="tab-link" onclick="openTab(event, 'portfolio')">Portfolio</button>
                 <button class="tab-link" onclick="openTab(event, 'contact')">Contact</button>
             </div>
 
-              <div id="languages" class="tab-content">
+              <div id="languages" class="tab-content" style="display: block;">
                 <h3 class="tab-content-header">Languages</h3>
                 <ul id="language-list" class="tab-content-list">
                     <li class="tab-content-list-item">HTML</li>
@@ -61,15 +61,15 @@
               <div id="portfolio" class="tab-content">
                 <h3 class="tab-content-header">Portfolio</h3>
                 <div id="portfolio-cards-container">
-                    <a class="portfolio-card" href="https://rickety-cricket.com" target="_blank">
                         <div class="card">
-                            <img src="./img/mollywhopped.jpeg" class="card-img-top" alt="mollywhopped album cover">
-                            <div class="card-body border border-black">
-                            <h5 class="card-title">Rickety Cricket</h5>
-                            <p class="card-text">Website I created and maintain for my band.</p>
-                            </div>
+                            <a class="portfolio-card" href="https://rickety-cricket.com" target="_blank">
+                                <img src="./img/mollywhopped.jpeg" class="card-img-top" alt="mollywhopped album cover">
+                                <div class="card-body border border-black">
+                                <h5 class="card-title">Rickety Cricket</h5>
+                                <p class="card-text">Website I created and maintain for my band.</p>
+                                </div>
+                            </a>
                       </div>
-                    </a>
                 </div>
               </div>
 
