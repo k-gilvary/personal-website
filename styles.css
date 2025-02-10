@@ -8,6 +8,11 @@ html, body {
     padding: 0;
     font-family: "42dot Sans", serif;
     background-color: var(--main-bg);
+    color: white;
+}
+
+.w-90 {
+    width: 90%;
 }
 
 .loading {
@@ -31,30 +36,8 @@ html, body {
     animation-direction: alternate;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    20% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
 .hidden {
     display: none;
-}
-
-#main-content {
-    color: white;
 }
 
 #profile-image {
@@ -63,7 +46,6 @@ html, body {
 }
 
 #about-container {
-    width: 90%;
     line-height: 1.7rem;
 }
 
@@ -71,4 +53,52 @@ html, body {
     font-size: 24px;
     font-weight: bold;
     margin-right: 10px;
+}
+
+.tab {
+    border-top: 2px solid white;
+    padding-top: 10px;
+}
+
+.tab button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: white;
+    float: left;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.tab button.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.tab-content {
+    display: none;
+    padding: 0 25px;
+    animation: fadeIn 1s;
+}
+
+.contact-link {
+    color: white;
+}
+
+.portfolio-card {
+    text-decoration: none;
+}
+
+#footer {
+    text-align: center;
+    font-size: 20px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
 }
