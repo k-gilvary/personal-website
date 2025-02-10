@@ -9,7 +9,7 @@ blackScrn.appendChild(blackScrnTxt);
 docBody.insertBefore(blackScrn, docBody.firstChild);
 blackScrnTxt.addEventListener('animationend', () => {
     blackScrn.remove();
-    mainContent.classList.remove('hidden');
+    mainContent.classList.remove('d-none');
 })
 
 const welcomeFade = () => {
@@ -19,4 +19,4 @@ const welcomeFade = () => {
     
 }
 
-setTimeout(welcomeFade, 6000)
+setTimeout(welcomeFade, 4000)
